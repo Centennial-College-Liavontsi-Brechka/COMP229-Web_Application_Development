@@ -1,0 +1,48 @@
+﻿body{
+    background-image: url(../images/mainBg.png);
+    font-family: sans-serif;
+}
+
+#wrapper{
+    width: 880px;
+    margin: 0 auto;
+    background-color: #ecfc99;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 3px #C0C0C0;
+}
+
+#header{
+    background-color: #273975;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#lowerHeader{
+    text-align: center;
+    margin-top: 15px;
+}
+
+#mainContent{
+    padding: 15px;
+    text-align: center;
+}
+
+#footer{
+    padding: 15px 15px 5px 15px;
+    text-align: center;
+}
+
+.RecommendationText
+{ 
+  color: Black;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 10px;
+}
+.RecommendationLink
+{
+  color: Black;
+  font-family: Verdana, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-size: 10px;
+}

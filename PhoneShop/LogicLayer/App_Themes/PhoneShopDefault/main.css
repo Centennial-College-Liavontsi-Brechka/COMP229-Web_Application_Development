@@ -1,0 +1,137 @@
+﻿.DepartmentList {
+    width: 70%;
+}
+
+a.DepartmentUnselected {
+    /*font-family: Verdana, Arial;*/
+    font-weight: bold;
+    /*font-size: 9pt;*/
+    color: white;
+    /*line-height: 25px;
+  padding-left: 5px;*/
+    text-decoration: none;
+}
+
+    a.DepartmentUnselected:hover {
+        /*padding-left: 5px;*/
+        color: #2e8b57;
+    }
+
+a.DepartmentSelected {
+    /*font-family: Verdana, Arial;*/
+    font-weight: bold;
+    /*font-size: 9pt;*/
+    color: green;
+    /*line-height: 25px; 
+  padding-left: 5px;*/
+    text-decoration: none;
+}
+
+.CategoryList {
+    width: 100%;
+    margin-top: 10px;
+}
+
+a.CategoryUnselected {
+    /*font-family: Verdana, Arial;*/
+    font-weight: bold;
+    /*font-size: 9pt;*/
+    color: #cd853f;
+    /*line-height: 25px;
+  padding-right: 5px;  
+  padding-left: 5px;*/
+    text-decoration: none;
+}
+
+    a.CategoryUnselected:hover {
+        color: #d2691e;
+        /*padding-right: 5px;  
+  padding-left: 5px*/
+    }
+
+a.CategorySelected {
+    /*font-family: Verdana, Arial;*/
+    font-weight: bold;
+    /*font-size: 9pt;*/
+    color: #a0522d;
+    /*line-height: 25px;
+  padding-right: 5px;  
+  padding-left: 5px;*/
+    text-decoration: none;
+}
+
+.ProductTitle {
+    color: #2e8b57;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.ProductDescription {
+    color: Black;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.ProductPrice {
+    color: Black;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.SmallButtonText {
+    color: Black;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.RecommendationBlock {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width:808px;
+}
+
+.RecommendationHead {
+    color: Black;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.RecommendationText {
+    color: Black;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.RecommendationLink {
+    color: Black;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+.CartLink {
+    color: #2e8b57;
+    text-decoration: none;
+}
+
+a.CartLink:hover {
+    color: blue;
+}
+
+.ProductInfoTable {
+    margin: 10px 0;
+}
+
+.AddFeedbackTable {
+    color: Black;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 0 auto;
+    width: 450px;
+}

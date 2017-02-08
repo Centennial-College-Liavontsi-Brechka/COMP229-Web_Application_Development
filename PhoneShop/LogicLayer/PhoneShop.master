@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PhoneShop.master.cs" Inherits="PhoneShop" %>
+
+<%@ Register Src="~/userControls/Search.ascx" TagPrefix="uc1" TagName="Search" %>
+<%@ Register Src="~/userControls/DepartmentList.ascx" TagPrefix="uc2" TagName="DepartmentList" %>
+<%@ Register Src="~/userControls/UserInfo.ascx" TagPrefix="uc3" TagName="UserInfo" %>
+<%@ Register Src="~/userControls/CartSummary.ascx" TagPrefix="uc4" TagName="CartSummary" %>
+<%@ Register Src="~/UserControls/CategoriesList.ascx" TagPrefix="uc6" TagName="CategoriesList" %>
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="styles/main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <div id="header">
+                <div id="upperHeader">
+                    <asp:Table ID="Table1" runat="server" Width="100%">
+                        <asp:TableRow>
+                            <asp:TableCell>
+                                <a href="Home.aspx"><img src="images/mainShopLogo.png" width="64" height="83" /></a>
+                            </asp:TableCell>
+                            <asp:TableCell>
+                                <uc1:Search runat="server" ID="Search" />
+                            </asp:TableCell>
+                            <asp:TableCell>
+                                <img src="images/banner-phone.png" height="83"/>
+                            </asp:TableCell>
+                        </asp:TableRow>
+                    </asp:Table>
+                </div>
+                <div id="lowerHeader">
+                    <asp:Table ID="Table2" runat="server" Width="100%">
+                        <asp:TableRow>
+                            <asp:TableCell>
+                                <uc2:DepartmentList runat="server" ID="DepartmentList" />
+                            </asp:TableCell>
+                            <asp:TableCell Width="10%">
+<%--                                <uc3:UserInfo runat="server" ID="UserInfo" />--%>
+                            </asp:TableCell>
+                            <asp:TableCell Width="10%">
+                                <uc4:CartSummary runat="server" ID="CartSummary" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow>
+                            <asp:TableCell>
+                                <uc6:CategoriesList runat="server" ID="CategoriesList" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                    </asp:Table>
+                </div>
+            </div>
+            <div id="mainContent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="footer">
+                <hr />
+                <div id="copyright">
+                    <h6>&copyCopyright: Liavontsi Brechka, HuAndre Barrett, Padma Chakraborty</h6>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
